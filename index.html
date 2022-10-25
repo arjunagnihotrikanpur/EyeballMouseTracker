@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Tracker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #anchor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            
+        }
+
+        #eyes, #eyes img {
+            transform-origin: top;
+            position: absolute;
+        } 
+    </style>
+</head>
+<body>
+
+    <main>
+        <img id="anchor" src="main.png" />
+        <div id="eyes">
+            <img class="eye" src="eye.png" style="top: -145px; left: -118px" />
+            <img class="eye" src="eye.png" style="top: -151px; left: 61px" /> 
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
